@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/lidiakrajewska/advice-generator-app-main](https://github.com/lidiakrajewska/advice-generator-app-main)
+- Live Site URL: [https://lidiakrajewska.github.io/advice-generator-app-main/](https://lidiakrajewska.github.io/advice-generator-app-main/)
 
 ## My process
 
@@ -41,6 +41,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - JavaScript
+- Advice Slip JSON API
 
 ### What I learned
 
