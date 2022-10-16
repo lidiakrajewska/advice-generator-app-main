@@ -1,0 +1,106 @@
+$text-color: hsl(193, 38%, 86%);
+$accent: hsl(150, 100%, 66%);
+$light-gray: hsl(217, 19%, 38%);
+$dark-gray: hsl(217, 19%, 24%);
+$background: hsl(218, 23%, 16%);
+$font: "Manrope", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  font-family: $font;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: Min(90%, 500px);
+  padding: 2.5rem 1rem 4rem 1rem;
+  background-color: $dark-gray;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: hsla(0, 0, 0, 0.3) 0px 0px 20px;
+}
+
+.card__title {
+  margin-bottom: 1.5rem;
+  font-size: 0.6rem;
+  color: $accent;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.card__text {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: $text-color;
+}
+
+.card__divider {
+  display: block;
+}
+
+#advice-button {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  padding: 1rem;
+  background-color: $accent;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: hsla(150, 100%, 66%, 0.6) 0px 0px 30px,
+      hsla(150, 100%, 66%, 0.7) 0px 0px 15px;
+  }
+}
+
+.attribution {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: $light-gray;
+
+  a {
+    color: $light-gray;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+    border-radius: 15px;
+  }
+
+  .card__title {
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+
+  .card__text {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .card__divider {
+    content: url("./images/pattern-divider-desktop.svg");
+    width: 95%;
+  }
+}
