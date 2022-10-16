@@ -6,7 +6,7 @@ const adviceButton = document.querySelector("#advice-button");
 adviceButton.addEventListener("click", showAdvice);
 
 async function fetchAPI(apiUrl) {
-  const dataFetch = await fetch(apiUrl);
+  const dataFetch = await fetch(apiUrl, { cache: "reload" });
   const data = await dataFetch.json();
   return data;
 }
